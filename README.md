@@ -1,2 +1,1 @@
-# PINN-example-julia
-Developing a physics informed neural network using the Julia Programming Language
+This repo will hold all my Data-Driven Science and Engineering Textbook notes!
