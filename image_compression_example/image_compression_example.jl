@@ -1,14 +1,7 @@
 # This julia file will provide an example of image compression using SVD (Singular Value Decomposition)
 # MUST BE RUN FROM WITHIN THE 'image_compression_example' folder!!
 using Pkg
-Pkg.add("Images")
-Pkg.add("FileIO")
-Pkg.add("ImageMagick")
-Pkg.add("LinearAlgebra") # for SVD calculations
-Pkg.add("Plots")
-
-using Images, FileIO, LinearAlgebra, Plots
-
+include("./load_packages.jl")
 
 # injesting the image of the dog
 A = load("./Figures/Dog.jpeg")
