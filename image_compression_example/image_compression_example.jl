@@ -18,7 +18,7 @@ S_diagonal = Diagonal(S)
 #Approx A using truncated SVD method
 matrix_rank_truncation_values = [5 20 100]
 
-for r in matrix_rank_truncation_values
+for r in matrix_rank_truncation_values # As one increases r (rank) the image output becomes clearer)
   x_approx = U[:, 1:r]*S_diagonal[1:r, 1:r]*transpose(V[:,1:r])
   #creating image
   fname = "./Figures/Truncated_image_rank_$r.png"
