@@ -17,7 +17,7 @@ U,S,V = svd(a, full=false)
 S_diagonal = Diagonal(S)
 
 x_approx = V*inv(S_diagonal)*transpose(U)*b
-
+println("x: $x_approx") # Leads to a 1x1 matrix because both a and b are vectors
 
 plot(a, a*x, label="no noise")
 plot!(a, b, label="with noise")
