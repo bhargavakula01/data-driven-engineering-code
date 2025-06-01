@@ -23,7 +23,7 @@ R = [cos(θ) sin(θ); -sin(θ) cos(θ)]
 
 npts = 1000 #number of data points
 
-#The 'rand(Float64,(npts, 2))*Diagonal(σ)*R' applies the rotation of the data 
+#The 'randn(npts, 2)*Diagonal(σ)*R' applies the rotation of the data 
 #and 'ones(npts, 2)*Diagonal(x_c)' adds the centering of the data at (2,1)
 X = randn(npts, 2)*Diagonal(σ)*R + ones(npts, 2)*Diagonal(x_c) #(10000,2) matrix
 scatter(X[:,1], X[:, 2])
