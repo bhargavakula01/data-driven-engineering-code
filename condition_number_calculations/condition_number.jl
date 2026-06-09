@@ -1,6 +1,7 @@
 # This Julia script will be used to learn how to perform condition number analysis
 
 using Pkg
+Pkg.instantiate()
 Pkg.add("LinearAlgebra")
 
 using LinearAlgebra
